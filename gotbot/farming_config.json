@@ -1,0 +1,19 @@
+{
+  "normal": [
+    { "file": "search.png", "double": false },
+    { "file": "freedom.png", "double": false },
+    { "file": "search2.png", "double": false },
+    { "file": "creature_found.png", "double": true }
+  ],
+  "event": [
+    { "file": "search.png", "double": false },
+    { "file": "event.png", "double": false },
+    { "file": "freedom.png", "double": false },
+    { "file": "search2.png", "double": false },
+    { "file": "creature_found.png", "double": true }
+  ],
+  "post_click": [
+    { "file": "attack.png", "double": false },
+    { "file": "march.png", "double": false }
+  ]
+}

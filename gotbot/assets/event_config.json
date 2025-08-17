@@ -1,0 +1,17 @@
+{
+  "active_event": "gold_mines",
+  "events": {
+    "gold_mines": {
+      "template": "gold_mines.png",
+      "click_offset": [10, 20]
+    },
+    "creature_caves": {
+      "template": "creature_caves.png",
+      "click_offset": [15, 25]
+    },
+    "resource_nodes": {
+      "template": "resource_nodes.png",
+      "click_offset": [5, 10]
+    }
+  }
+}
