@@ -22,7 +22,7 @@ def find_and_click(template_path, window_title="BlueStacks App Player", double=F
             logging.warning("BlueStacks window not found.")
             return None
 
-    def find_button(screen, template_path, threshold=0.65):
+    def find_button(screen, template_path, threshold=0.04):
         template = cv2.imread(template_path, cv2.IMREAD_UNCHANGED)
         if template is None:
             logging.warning(f"Template not found: {template_path}")
@@ -59,3 +59,4 @@ def find_and_click(template_path, window_title="BlueStacks App Player", double=F
     else:
         logging.warning(f"Button not found: {template_path}")
         return False
+
