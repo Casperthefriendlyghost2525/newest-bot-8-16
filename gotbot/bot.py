@@ -44,7 +44,7 @@ def capture_bluestacks_window(window_title="BlueStacks App Player"):
         return None
 
 # Template matching
-def find_button(screen, template_path, threshold=0.65):
+def find_button(screen, template_path, threshold=0.04):
     template = cv2.imread(template_path, cv2.IMREAD_UNCHANGED)
     if template is None:
         logging.warning(f"Template not found: {template_path}")
@@ -144,7 +144,7 @@ def main():
             time.sleep(1)
             continue
 
-        if choice == 2:
+        if choice == 1:
             pos = find_button(screen, template_path)
             if pos:
                 x = pos[0] + offset[0]
@@ -165,4 +165,5 @@ def main():
 # Entry point
 if __name__ == "__main__":
     main()
+
        
